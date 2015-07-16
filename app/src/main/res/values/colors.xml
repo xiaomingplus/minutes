@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e00434</color>
+    <color name="colorPrimaryDark">#e00434</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FF80AB</color>
+    <color name="order_description">#bdc3c7</color>
+    <color name="light_grey">#ecf0f1</color>
+    <color name="colorButton">#e00434</color>
+    <color name="colorText">#000000</color>
+    <color name="backgroudLoad">#e00434</color>
+    <color name="hr">#ecf0f1</color>
+</resources>

@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.yangguobao.minutes.activity.AbountFragment">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#FAF0E6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="钱包余额"
+            android:textSize="35dp"
+            />
+        <TextView
+            android:id="@+id/wallet_money"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:hint=""
+            android:textSize="50dp"
+            android:textColor="#ff5f00"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:numeric="decimal"
+            android:textColor="@color/colorText"
+            android:hint="请输入充值金额"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/post_button_money"
+            android:layout_height="wrap_content"
+            android:layout_width="161dp"
+            android:layout_gravity="center_horizontal"
+            android:text="点击充值"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:background="@color/colorButton"
+            />
+
+    </LinearLayout>
+</FrameLayout>

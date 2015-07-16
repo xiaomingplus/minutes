@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.yangguobao.minutes.activity.UserFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#FAF0E6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="90dp"
+        >
+        <TextView
+            android:id="@+id/nickNameKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="@string/nickNameKey"
+            />
+        <EditText
+            android:id="@+id/nickNameKeyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:maxLines="1"
+            android:textColor="@color/colorText"
+            android:layout_toRightOf="@id/nickNameKey"
+            android:hint="@string/nickNameKeyValue"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="90dp" >
+
+        <TextView
+            android:id="@+id/genderKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genderKey"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/genderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="38dp">
+            <RadioButton
+                android:id="@+id/radioButtonBoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/genderKey"
+                android:text="@string/gender_boy" />
+            <RadioButton
+                android:id="@+id/radioButtonGirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/radioButtonBoy"
+                android:text="@string/gender_girl" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:id="@+id/phoneNumberKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/phoneNumberKey"
+            />
+        <TextView
+            android:id="@+id/phoneNumberKeyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/phoneNumberKey"
+            android:text="@string/phoneNumberKeyValue"/>
+    </RelativeLayout>
+
+    <cn.yangguobao.minutes.activity.RatingBar
+        android:id="@+id/scoreKeyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:isIndicator="true"
+        android:numStars="5" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorButton"
+        android:text="@string/finishButton"
+        />
+
+</LinearLayout>
+
+    </FrameLayout>

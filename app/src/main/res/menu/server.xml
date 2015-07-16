@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+     <item
+        android:id="@+id/online_item"
+        android:title="上线"
+        />
+     <item
+        android:id="@+id/offline_item"
+        android:title="下线"/>
+
+</menu>

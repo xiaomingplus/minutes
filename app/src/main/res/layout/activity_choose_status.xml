@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/colorButton"
+    tools:context=".ChooseStatus"
+    android:weightSum="1">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:textSize="24dp"
+    android:text="@string/title_activity_choose_status"
+    android:textColor="@color/textColorPrimary"
+    android:layout_gravity="center_horizontal" />
+
+
+    <ImageView
+        android:layout_marginTop="90dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/user_consumers"
+        android:src="@drawable/user_consumer"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ImageView
+        android:layout_marginTop="90dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/user_receivers"
+        android:src="@drawable/user_receiver"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>

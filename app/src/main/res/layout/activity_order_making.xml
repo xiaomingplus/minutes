@@ -1,0 +1,92 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context=".ReceiveOrder" >
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:text="崔大帅他图图"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="32dp"
+            android:textColor="@color/colorText"
+            android:paddingTop="40dp"
+            android:id="@+id/orderDetailToUserNickName" />
+
+
+        <TextView
+            android:text="「18613227075」"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="32dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/new_order_tel_to" />
+
+
+        <!--<cn.yangguobao.minutes.activity.RatingBar-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/orderDetailRatingBarTo"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:isIndicator="true"-->
+            <!--android:stepSize="1"-->
+            <!--android:maxHeight="3dp"-->
+            <!--android:maxWidth="3dp"-->
+            <!--android:rating="4" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/to_dial_to"
+                android:src="@drawable/ic_action_dial"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/to_msg_to"
+                android:src="@drawable/ic_action_msg"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_marginLeft="30dp"
+                android:id="@+id/cancelOrderNowTo"
+                android:layout_width="fill_parent"
+                android:background="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:text="取消订单" />
+
+
+        </LinearLayout>
+    </LinearLayout>
